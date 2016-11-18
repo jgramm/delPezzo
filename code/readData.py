@@ -39,7 +39,7 @@ def readCytable(fileName, delim="\t"):
                 dat[labels[i]] = r[i]
             data.append(dat)
             
-            line = f.readline()#.rstrip()
+            line = f.readline().rstrip()
         
         
     return (labels, data)
