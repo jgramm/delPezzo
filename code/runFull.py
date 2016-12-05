@@ -5,15 +5,13 @@ Created on Fri Nov 18 10:55:32 2016
 @author: James
 """
 import utils
-import readData
-import evalData
-import getK2
+import DataHandling
+import Computation
 
 
 def main():
     fileName = 'C:/Users/James/Desktop/delPezzo/data/cytable.csv'
-    tup = readCytable(fileName)
-    data = tup[1]
+    data = readCytable(fileName)
     rows = evalData(data)
     
     count = 0
