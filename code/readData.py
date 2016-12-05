@@ -27,10 +27,10 @@ def readCytable(fileName, delim="\t"):
         
         line = f.readline().rstrip()
         
-        print(len(labels))
+        #print(len(labels))
         ## iterate through lines turning each row into a dictionary
         while line:
-            print(line)        
+            #print(line)        
             
             dat = {}
             r = line.split(delim)

@@ -5,8 +5,8 @@ Created on Fri Nov 18 03:06:20 2016
 @author: James
 """
 
-def getDivisors(datum):
-    """ gets the toric divisors out of a CY polytope """
+def getSymbolicDivisors(datum):
+    """ gets the toric divisors out of a CY polytope in terms of J_i """
     
     divisors = []
     
@@ -21,4 +21,12 @@ def getDivisors(datum):
             divisors.append(splitToric[i])
     
     return divisors
+    
+    
+def getExplicitDivisors(datum):
+    """ gets an explicit expression for the toric divisors from the 
+        CY Polytope"""
+        
+    symbs = getSymbolicDivisors(datum)
+    
     
