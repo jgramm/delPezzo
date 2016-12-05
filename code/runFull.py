@@ -4,13 +4,13 @@ Created on Fri Nov 18 10:55:32 2016
 
 @author: James
 """
-import utils
-import DataHandling
-import Computation
-
+from Utils import *
+from DataHandling import *
+from Computation import *
+from Params import *
 
 def main():
-    fileName = 'C:/Users/James/Desktop/delPezzo/data/cytable.csv'
+    fileName = dataDir + 'h4.csv'
     data = readCytable(fileName)
     rows = evalData(data)
     

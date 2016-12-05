@@ -69,6 +69,7 @@ def evalChern2(datum):
     comps = datum['CY 2nd Chern Class (Basis)'].split('+')
 
     basis = []    
+    print(comps)
     for v in comps:
         vi = v.split('*')
         
@@ -87,6 +88,7 @@ def evalChern2(datum):
             basis.append((fracStringToFloat(vi[0]), int(vi[1][jIndP]), int(vi[1][jIndP])))
 
         else:
+            print(len(vi), vi)
             jInd1P = vi[1].index('J') + 1
             jInd2P = vi[2].index('J') + 1
             basis.append((fracStringToFloat(vi[0]), int(vi[1][jInd1P]), int(vi[2][jInd2P])))

@@ -5,12 +5,13 @@ Created on Mon Dec  5 06:30:59 2016
 @author: James
 """
 
-import utils
+from Utils import *
 
 def euler(diStr, row):
     """ Computes the Euler characteristic of the divisor represented by 
         diStr for the given row """
     jVals = diStrToJVals(diStr, row)
+    tensor = row['tensor']
     
     c2 = row['chern2']
     euler = 0
